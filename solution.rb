@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
+get '/makers/:nombre' do
     @nombre = params[:nombre]
     erb :index
 end
