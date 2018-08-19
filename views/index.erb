@@ -1,6 +1,8 @@
 
-<% if !@nombre.nil? && @nombre!="" %>
-    <h1>Hola <%= @nombre.capitalize  %>!</h1>
-<% else %>
-    <h1>Hola desconocido!</h1>
-<%end%>
+<h1>Hola dime a quien saludar</h1>
+
+<form action="/saludar", method="POST">
+    <input type="text" name="nombre">
+    <input type="submit" value="Submit">
+</form> 
+  
